@@ -1,0 +1,295 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 400 13px Montserrat, sans-serif;
+  background: #f2f2f2;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea {
+	outline: none;
+	font: 400 14px Montserrat, sans-serif;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.featured {
+  height: 870px;
+  padding: 20px;
+  color: #fff;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
+    url("../img/capa-madmax2.jpg");
+  background-attachment: scroll, fixed;
+  background-size: cover;
+  background-position: center center;
+}
+
+.featured .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.featured nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.featured .menu {
+  display: flex;
+}
+
+.featured .menu li {
+  list-style: none;
+  margin: 0 25px;
+}
+
+.featured .menu li a {
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+}
+
+.featured .menu li a:hover {
+  color: #e4bb23;
+}
+
+.featured .user {
+  display: flex;
+  align-items: center;
+}
+
+.featured .user img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+
+.featured .details h1 {
+  font-size: 65px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.featured .details ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.featured .details ul a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-right: 16px;
+  transition: color 0.2s ease-in;
+}
+
+.featured .details ul a:hover {
+  color: #e4bb23;
+}
+
+.featured .details button {
+  border: 0;
+  background-color: #e4bb23;
+  color: #000;
+  font-size: 15px;
+  padding: 15px 15px 15px 50px;
+  border-radius: 30px;
+	margin-bottom: 20px;
+  transition: background-color 0.2s ease-in;
+}
+
+.featured .details button:hover {
+  background-color: #bc9a1d;
+}
+
+.featured .details p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.featured .details span {
+	display: block;
+  font-size: 14px;
+  color: #e4bb23;
+  margin-bottom: 30px;
+}
+
+.catalog nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.catalog nav ul li a {
+	display: inline-block;
+	margin: 0 20px;
+	padding: 25px 0;
+  color: #e4bb23;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: box-shadow 0.2s ease-in;
+}
+
+.catalog nav ul li a:hover {
+	box-shadow: inset 0px -2px 0px 0px rgb(228,187,35);
+}
+
+.catalog .cards {
+	list-style: none;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.catalog .card {
+	width: 230px;
+	background-color: #fff;
+	margin-bottom: 30px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.catalog .card:hover > .poster .poster-content {
+  opacity: 1;
+}
+
+.catalog .card .poster {
+  position: relative;
+}
+
+.catalog .card .poster-content {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 99%;
+  padding: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 8px 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease-in;
+}
+
+.catalog .card .poster-content h2 {
+  color: #e4bb23;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.catalog .card .poster-content a {
+  color: #fff;
+  font-size: 50px;
+  transition: color 0.2s ease-in;
+}
+
+.catalog .card .poster-content a:hover {
+  color: #e4bb23;
+}
+
+.catalog .card img {
+	width: 100%;
+	border-radius: 8px 8px 0 0;
+}
+
+.catalog .card .card-content {
+	padding: 10px
+}
+
+.catalog .card .card-content h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.catalog .card .card-content p {
+	margin: 10px 0;
+	color: #e4bb23;
+}
+
+.catalog .card .card-content p a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.catalog .card .card-content p a:hover {
+	text-decoration: underline;
+}
+
+.catalog .card .card-content span {
+	font-size: 20px;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.catalog .card .card-content span i {
+	color: #ccc;
+	cursor: pointer;
+}
+
+.catalog .card .card-content span i:hover {
+	color: #e74c3c;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #fff;
+  color: #bababa;
+  height: 90px;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .socials .fa {
+  color: #bababa;
+  font-size: 25px;
+  margin-left: 40px;
+  transition: color 0.2s ease-in;
+}
+
+footer .socials .fa-twitter:hover {
+  color: #55acee;
+}
+
+footer .socials .fa-facebook-square:hover {
+  color: #3b5998;
+}
+
+footer .socials .fa-instagram:hover {
+  color: #e95950;
+}
