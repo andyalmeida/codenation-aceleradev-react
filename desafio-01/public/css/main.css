@@ -167,9 +167,9 @@ textarea {
 .catalog .cards {
 	list-style: none;
   padding: 25px 0;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
 }
 
 .catalog .card {
