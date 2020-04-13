@@ -1,6 +1,12 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+:root {
+  --color-yellow: #e4bb23;
+  --color-dark-yellow: #bc9a1d;
+  --color-gray: #bababa;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -30,7 +36,7 @@ textarea {
   padding: 20px;
   color: #fff;
   background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.8)),
-    url("../img/capa-madmax2.jpg");
+              url("../img/capa-madmax2.jpg");
   background-attachment: scroll, fixed;
   background-size: cover;
   background-position: center center;
@@ -68,7 +74,7 @@ textarea {
 }
 
 .featured .menu li a:hover {
-  color: #e4bb23;
+  color: var(--color-yellow);
 }
 
 .featured .user {
@@ -105,12 +111,12 @@ textarea {
 }
 
 .featured .details ul a:hover {
-  color: #e4bb23;
+  color: var(--color-yellow);
 }
 
 .featured .details button {
   border: 0;
-  background-color: #e4bb23;
+  background-color: var(--color-yellow);
   color: #000;
   font-size: 15px;
   padding: 15px 15px 15px 50px;
@@ -120,7 +126,7 @@ textarea {
 }
 
 .featured .details button:hover {
-  background-color: #bc9a1d;
+  background-color: var(--color-dark-yellow);
 }
 
 .featured .details p {
@@ -131,7 +137,7 @@ textarea {
 .featured .details span {
 	display: block;
   font-size: 14px;
-  color: #e4bb23;
+  color: var(--color-yellow);
   margin-bottom: 30px;
 }
 
@@ -147,7 +153,7 @@ textarea {
 	display: inline-block;
 	margin: 0 20px;
 	padding: 25px 0;
-  color: #e4bb23;
+  color: var(--color-yellow);
 	font-weight: 700;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -155,7 +161,7 @@ textarea {
 }
 
 .catalog nav ul li a:hover {
-	box-shadow: inset 0px -2px 0px 0px rgb(228,187,35);
+	box-shadow: inset 0px -2px 0px 0px var(--color-yellow);
 }
 
 .catalog .cards {
@@ -201,7 +207,7 @@ textarea {
 }
 
 .catalog .card .poster-content h2 {
-  color: #e4bb23;
+  color: var(--color-yellow);
   text-transform: uppercase;
   margin-bottom: 20px;
   font-size: 20px;
@@ -214,7 +220,7 @@ textarea {
 }
 
 .catalog .card .poster-content a:hover {
-  color: #e4bb23;
+  color: var(--color-yellow);
 }
 
 .catalog .card img {
@@ -233,7 +239,7 @@ textarea {
 
 .catalog .card .card-content p {
 	margin: 10px 0;
-	color: #e4bb23;
+	color: var(--color-yellow);
 }
 
 .catalog .card .card-content p a {
@@ -254,7 +260,7 @@ textarea {
 }
 
 .catalog .card .card-content span i {
-	color: #ccc;
+	color: var(--color-gray);
 	cursor: pointer;
 }
 
@@ -265,7 +271,7 @@ textarea {
 footer {
   padding: 20px 0;
   background-color: #fff;
-  color: #bababa;
+  color: var(--color-gray);
   height: 90px;
 }
 
@@ -276,7 +282,7 @@ footer .container {
 }
 
 footer .socials .fa {
-  color: #bababa;
+  color: var(--color-gray);
   font-size: 25px;
   margin-left: 40px;
   transition: color 0.2s ease-in;
